@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+  --blue:#6366f1;
+  --white: var(--white);
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -14,12 +19,12 @@ body {
   align-items: center;
 /* vai ter uma altura minima */
   min-height: 100vh;
-  background-color: #6366f1;
+  background-color: var(--blue);
 
 }
 
 .btn-default {
-  background-color: #6366f1;
+  background-color: var(--blue);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +32,7 @@ body {
   padding: 8px 12px ;
   border-radius: 8px;
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   gap: 8px;
   height: fit-content;
@@ -71,7 +76,7 @@ body {
   width: 100px;
   height: 3px;
   border-radius: 30px;
-  background-color: #6366f1;
+  background-color: var(--blue);
   left: 0;
   bottom: 0;
 }
@@ -99,7 +104,7 @@ body {
 .input-field {
   display: flex;
   align-items: center;
-  background-color: #ffffff;
+  background-color: var(--white);
   border-radius: 8px;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
@@ -131,7 +136,7 @@ body {
 }
 
 .input-box .input-field:focus-within {
-  outline: 2px solid #6366f1;
+  outline: 2px solid var(--blue);
 }
 
 input:-webkit-autofill {
