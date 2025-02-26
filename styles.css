@@ -145,6 +145,7 @@ input:-webkit-autofill {
 #gender_inputs {
   display: flex;
   gap: 20px;
+
 }
 
 .radio-box {
@@ -170,6 +171,12 @@ input:-webkit-autofill {
     flex-direction: column;
     gap: 38px;
   }
+
+  #gender_inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    }
 }
 
 .form-control[type="date"] {
